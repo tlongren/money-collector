@@ -11,7 +11,7 @@
 }
 
 body {
-  background:url("./wild_oliva.png");
+  background:url("/assets/wild_oliva.png");
 }
 span.sep {
   color:#FFF;
@@ -201,7 +201,7 @@ h6 {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba( 255, 255, 255, .4 ) url('./loading.gif') 50% 50%  no-repeat;
+  background: rgba( 255, 255, 255, .4 ) url('/assets/loading.gif') 50% 50%  no-repeat;
 }
 
 #loading p { 
