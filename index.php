@@ -23,7 +23,7 @@ $yourName = "Put Your Name Here";
                 // Re-enable the submit button so the user can try again
                 $('.submit-button').removeAttr("disabled");
             }
-            function stripeResponseHandler(status, response) {
+            function stripeResponseHandler(status, response) {;
                 if (response.error) {
                   $('.payment-alert').show().html(response.error.message);
                 } else {  
