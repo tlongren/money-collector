@@ -3,7 +3,7 @@ MoneyCollector
 
 Simple website to accept payments through Stripe. You've gotta get a [Stripe account](https://stripe.com/).
 
-You can see it action at [http://pay.longren.org/](http://pay.longren.org/).
+You can see it action at [http://pay.longren.org/](http://pay.longren.org/). IF you find this useful, feel free to drop me a few dollars for coffee and beer. :)
 
 This was inspired by [begriffs/lucre heroku hosted option](https://github.com/begriffs/lucre).
 
