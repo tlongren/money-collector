@@ -5,7 +5,7 @@ $yourName = "Put Your Name Here";
 <html lang="en">
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <title>Pay Tyler Longren</title>
+        <title>Pay <?=$yourName?></title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link href='style.css' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
