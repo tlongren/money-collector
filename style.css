@@ -11,7 +11,7 @@
 }
 
 body {
-  background:url("http://www.longren.org/pay/wild_oliva.png");
+  background:url("./wild_oliva.png");
 }
 span.sep {
   color:#FFF;
@@ -191,4 +191,24 @@ h6 {
   -moz-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
+}
+
+#loading {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba( 255, 255, 255, .4 ) url('./loading.gif') 50% 50%  no-repeat;
+}
+
+#loading p { 
+  text-align: center;
+  position:fixed;
+  left: 0;
+  bottom:300px;
+  width:100%;
+  z-index: 999;
 }
