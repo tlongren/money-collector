@@ -74,6 +74,10 @@ $(document).ready(function() {
             showErrorDialogWithMessage("Please enter your card security code.");
             return;
         }
+        if (price === "") {
+          showErrorDialogWithMessage("Please enter an amount to pay.");
+          return;
+        }
         
         // Boom! We passed the basic validation, so request a token from Stripe:
         Stripe.createToken({
