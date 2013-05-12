@@ -30,7 +30,7 @@ Setup
 
 Customization
 -----------------------------
-If you don't like the background image, it's really easy to change. There's some additional backgrounds in the assets folder, all are png files except the default. To change the background image, find the background you want in the assets folder, and copy the filename. Open style.css and replace __default_background.jpg__ on line 15 with the filename you copied from the assets folder. So, if you're switching to __black_lozenge.png__, you'd replace __default_background.jpg__ with __black_lozenge.png__. You'll also want to remove the background-size property, and remove the __no-repeat center center fixed__ piece from line 15, otherwise you're new background won't tile like it should.
+If you don't like the background image, it's really easy to change. There's some additional backgrounds in the assets folder, all are png files except the default. To change the background image, find the background you want in the assets folder, and copy the filename. Open style.css and replace __default_background.jpg__ on line 15 with the filename you copied from the assets folder. So, if you're switching to __black_lozenge.png__, you'd replace __default_background.jpg__ with __black_lozenge.png__. You'll also want to remove the __background-size__ property, and remove the __no-repeat center center fixed__ piece from line 15, otherwise your new background won't tile like it should.
 
 Here's an example of what your body css declaration should look like using something other than the default background:
 ```CSS
