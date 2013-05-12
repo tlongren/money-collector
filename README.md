@@ -6,6 +6,8 @@ You can see it action at [http://pay.longren.org/](http://pay.longren.org/). IF 
 
 This was inspired by [begriffs/lucre heroku hosted option](https://github.com/begriffs/lucre).
 
+If you find any issues or problems please report them using [the Issues tracker here at Github](https://github.com/tlongren/MoneyCollector/issues). 
+
 
 Setup
 -----------------------------
