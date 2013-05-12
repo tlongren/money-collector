@@ -1,5 +1,5 @@
 <?php
-$yourName = "Put Your Name Here";
+$yourName = "Your Name";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +7,7 @@ $yourName = "Put Your Name Here";
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <title>Pay <?=$yourName?></title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
         <link href='/assets/style.css' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
         <!-- jQuery is used only for this example; it isn't required to use Stripe -->

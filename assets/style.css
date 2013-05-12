@@ -125,9 +125,9 @@ h6 {
   margin: 20px auto;
   position: relative;
   color: #fff;
-  font: 28px/60px sans-serif;
+  font: 38px/55px 'Roboto Slab', serif;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   background: #3D79D0;
   
   -webkit-animation: main 250ms;
