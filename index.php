@@ -49,7 +49,7 @@ $yourName = "Your Name";
                         <input type="text" size="4" id="expiration-year" maxlength="4" placeholder="Expiration Year (eg: 2013)" class="card-expiry-year main-form"/>
                     </div>
                     <div class="form-row">
-                        <input type="text" size="2" id="charge-amount" placeholder="Amount in USD (eg: $35.99)" class="payment-amount main-form"/>
+                        <input type="text" size="2" id="charge-amount" placeholder="Amount in USD (eg: 35.99)" class="payment-amount main-form"/>
                     </div>
                     <button type="submit" class="submit-button">Submit Payment</button>
 
