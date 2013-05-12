@@ -1,17 +1,18 @@
+
 * {
   margin:0;
   padding:0;
   font-family: 'Open Sans', sans-serif;
   color:#FFF;
 }
-
+ 
 .payment-errors {
   font-family: 'Open Sans', sans-serif;
   font-size:10px;
 }
-
+ 
 body {
-  background:url("/assets/wild_oliva.png");
+    background:url("/assets/default-background.jpg");
 }
 span.sep {
   color:#FFF;
@@ -20,7 +21,7 @@ span.sep {
   text-align:center;
   margin:50px auto;
 }
-
+ 
 h1 {
   color:#fff;
   text-shadow:1px 1px 0px rgba(0, 0, 0, 0.3);
@@ -29,10 +30,10 @@ h1 {
 h1 a {
   text-decoration: none;
 }
-
+ 
 section {
   background:rgba(0, 0, 0, 0.4);
-  margin:0 auto;
+  margin:20px auto;
   width:300px;
   padding:20px;
   text-align:center;
@@ -63,15 +64,15 @@ section {
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
-
+ 
 .main-form:focus {
-  background:#eee;
+  background:rgba(204, 204, 204, 0.4);
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
-  color:#000;
+  color:#FFF;
 }
-
+ 
 button {
   border:none;
   background: #eeeeee;
@@ -97,18 +98,18 @@ button {
   margin-top:5px;
   font-family:'Open Sans', sans-serif;
 }
-
+ 
 button:active {
   box-shadow:inset 0px 2px 1px rgba(0, 0, 0, 0.3);
 }
-
+ 
 footer {
   padding-top:20px;
   text-align:right;
   width:330px;
   margin:0 auto;
 }
-
+ 
 h6 {
   display:inline-block;
   position:relative;
@@ -119,27 +120,48 @@ h6 {
   text-shadow:1px 1px 0px rgba(0, 0, 0 ,0.6);
 }
 
+input::-webkit-input-placeholder {
+  color: #eee;
+}
+
+input:-moz-placeholder {
+  color: #eee;
+}
+
+.payment-alert, .payment-error, .payment-success, .ajax-fail {
+  background:rgba(0, 0, 0, 0.4);
+  margin:0 auto;
+  padding:5px;
+  text-align:center;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+   -webkit-box-shadow:0px 1px 0px rgba(225, 225, 225, 0.18);
+      -moz-box-shadow:0px 1px 0px rgba(225, 225, 225, 0.18);
+          box-shadow:0px 1px 0px rgba(225, 225, 225, 0.18);
+}
+
 .ribbon {
   width: 400px;
   height: 60px;
-  margin: 20px auto;
+  margin: 30px auto;
   position: relative;
   color: #fff;
   font: 38px/55px 'Roboto Slab', serif;
   text-align: center;
   text-transform: none;
   background: #3D79D0;
-  
+   
   -webkit-animation: main 250ms;
   -moz-animation: main 250ms;
   -ms-animation: main 250ms;
   animation: main 250ms;
 }
-
+ 
 .ribbon i {
   position: absolute;
 }
-
+ 
 .ribbon i:first-child, .ribbon i:nth-child(2) {
   position: absolute;
   left: -20px;
@@ -147,20 +169,20 @@ h6 {
   z-index: -1;
   border: 20px solid transparent;
   border-right-color: #043140;
-  
+   
   -webkit-animation: edge 500ms;
   -moz-animation: edge 500ms;
   -ms-animation: edge 500ms;
   animation: edge 500ms;
 }
-
+ 
 .ribbon i:nth-child(2) {
   left: auto;
   right: -20px;
   border-right-color: transparent;
   border-left-color: #043140;
 }
-
+ 
 .ribbon i:nth-child(3), .ribbon i:last-child {
   width: 20px;
   bottom: -20px;
@@ -168,31 +190,31 @@ h6 {
   z-index: -2;
   border: 30px solid #1D53C0;
   border-left-color: transparent;
-  
+   
   -webkit-animation: back 600ms;
   -moz-animation: back 600ms;
   -ms-animation: back 600ms;
   animation: back 600ms;
-  
+   
   -webkit-transform-origin: 100% 0;
   -moz-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
 }
-
+ 
 .ribbon i:last-child {
   bottom: -20px;
   left: auto;
   right: -60px;
   border: 30px solid #1D53C0;
   border-right-color: transparent;
-
+ 
   -webkit-transform-origin: 0 0;
   -moz-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-
+ 
 #loading {
   display: none;
   position: fixed;
@@ -203,7 +225,7 @@ h6 {
   width: 100%;
   background: rgba( 255, 255, 255, .4 ) url('/assets/loading.gif') 50% 50%  no-repeat;
 }
-
+ 
 #loading p { 
   text-align: center;
   position:fixed;
