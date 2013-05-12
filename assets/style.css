@@ -12,7 +12,7 @@
 }
  
 body {
-    background:url("/assets/default-background.jpg");
+    background:url("/assets/default_background.jpg");
 }
 span.sep {
   color:#FFF;
