@@ -8,6 +8,7 @@ This was inspired by [begriffs/lucre heroku hosted option](https://github.com/be
 
 If you find any issues or problems please report them using [the Issues tracker here at Github](https://github.com/tlongren/MoneyCollector/issues). 
 
+Ribbon CSS from [Josh Bader](http://codepen.io/joshbader/pen/ukFLi) and form CSS from [Joey](http://codepen.io/joe/pen/yGcnH).
 
 Setup
 -----------------------------
