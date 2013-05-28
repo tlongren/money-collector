@@ -2,13 +2,14 @@ MoneyCollector
 ==============
 Simple website to accept payments through Stripe. You've gotta get a [Stripe account](https://stripe.com/).
 
-You can see it action at [http://pay.longren.org/](http://pay.longren.org/). IF you find this useful, feel free to drop me a few dollars for coffee and beer. :)
+You can see it action at [http://pay.longren.org/](http://pay.longren.org/). If you find this useful, feel free to drop me a few dollars for coffee and beer. :)
 
-This was inspired by [begriffs/lucre heroku hosted option](https://github.com/begriffs/lucre).
+This was inspired by [begriffs/lucre, like this but in Ruby](https://github.com/begriffs/lucre).
 
 If you find any issues or problems please report them using [the Issues tracker here at Github](https://github.com/tlongren/MoneyCollector/issues). 
 
 Ribbon CSS from [Josh Bader](http://codepen.io/joshbader/pen/ukFLi) and form CSS from [Joey](http://codepen.io/joe/pen/yGcnH).
+
 
 Setup
 -----------------------------
@@ -27,6 +28,11 @@ Setup
 7a. To go live, open pay.php and replace __$privateTestKey__ with __$privateLiveKey__ inside the __Stripe::setApiKey__ method.
 
 7b. Open index.php and replace __publicTestKey__ with __publicLiveKey__ inside the __Stripe.setPublishableKey__ javascript function.
+
+
+Setup 2
+-----------------------------
+This seems to work OK on Heroku. So, if you're into Heroku you can deploy it there just like you would anything else.
 
 
 Customization
