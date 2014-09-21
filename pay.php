@@ -6,6 +6,9 @@ function returnErrorWithMessage($message)
 	echo json_encode($a);
 }
 
+// Load stripe-php
+require_once('vendor/autoload.php');
+
 $privateTestKey = "ENTER YOUR PRIVATE TEST KEY HERE";	// These are the SECRET keys!
 $privateLiveKey = "ENTER YOUR PRIVATE LIVE KEY HERE";
 
