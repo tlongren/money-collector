@@ -1,12 +1,12 @@
 {
-  "name": "tlongren/MoneyCollector",
+  "name": "tlongren/money-collector",
   "description": "Simple mondey collector using Stripe",
   "keywords": [
     "stripe",
     "payment processing",
     "php"
   ],
-  "homepage": "https://github.com/tlongren/MoneyCollector",
+  "homepage": "https://github.com/tlongren/money-collector",
   "license": "MIT",
   "authors": [
     {
