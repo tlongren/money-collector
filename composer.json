@@ -1,0 +1,20 @@
+{
+  "name": "tlongren/MoneyCollector",
+  "description": "Simple mondey collector using Stripe",
+  "keywords": [
+    "stripe",
+    "payment processing",
+    "php"
+  ],
+  "homepage": "https://github.com/tlongren/MoneyCollector",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tyler Longren",
+      "homepage": "https://longrendev.io"
+    }
+  ],
+  "require": {
+    "stripe/stripe-php": "1.*"
+  }
+}
