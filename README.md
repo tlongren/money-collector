@@ -29,6 +29,8 @@ Setup
 
 7b. Open index.php and replace __publicTestKey__ with __publicLiveKey__ inside the __Stripe.setPublishableKey__ javascript function.
 
+8. For SSL, get a free SSL self-signed certificate from [tinycert.org](https://tinycert.org) and use [cloudflare](https://cloudflare.com) (pro account needed) or [Cloudbric](https://cloudbric.com).
+
 
 Customization
 -----------------------------
