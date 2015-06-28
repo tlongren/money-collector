@@ -15,7 +15,7 @@ Setup
 -----------------------------
 1. Open index.php and pay.php.
 
-2. In index.php, change the __$yourName__ and __$companyName__ variable at line 2 and 3 to whatever you want it to be.
+2. In index.php, change the __$yourName__ variable at line 2 to whatever you want it to be.
 
 3. In Index.php, edit javascript variables __publicTestKey__ and __publicLiveKey__. You can find those keys in your Stripe settings. These keys are publishable.
 
