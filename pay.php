@@ -1,4 +1,7 @@
 <?php
+// don't allow direct access to pay.php
+if(count(get_included_files()) ==1) exit("Direct access not permitted.");
+
 // Helper Function: used to post an error message back to our caller
 function returnErrorWithMessage($message)
 {
@@ -35,7 +38,7 @@ try {
 	try
 	{
 		// create the charge on Stripe's servers. THIS WILL CHARGE THE CARD!
-		$charge = Stripe_Charge::create(array(
+		$charge = \Stripe\Stripe::create(array(
 			"amount" => $priceInCents,
 			"currency" => "usd",
 			"card" => $token,
