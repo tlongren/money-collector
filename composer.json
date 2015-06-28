@@ -15,6 +15,6 @@
     }
   ],
   "require": {
-    "stripe/stripe-php": "1.*"
+    "stripe/stripe-php": "2.*"
   }
 }
