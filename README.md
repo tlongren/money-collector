@@ -6,7 +6,7 @@ You can see it action at [http://pay.longren.org/](http://pay.longren.org/). If 
 
 This was inspired by [begriffs/lucre, like this but in Ruby](https://github.com/begriffs/lucre).
 
-If you find any issues or problems please report them using [the Issues tracker here at Github](https://github.com/tlongren/MoneyCollector/issues). 
+If you find any issues or problems please report them using [the Issues tracker here at Github](https://github.com/tlongren/MoneyCollector/issues).
 
 Ribbon CSS from [Josh Bader](http://codepen.io/joshbader/pen/ukFLi) and form CSS from [Joey](http://codepen.io/joe/pen/yGcnH).
 
@@ -15,7 +15,7 @@ Setup
 -----------------------------
 1. Open index.php and pay.php.
 
-2. In index.php, change the __$yourName__ variable at line 2 to whatever you want it to be.
+2. In index.php, change the __$yourName__ and __$companyName__ variable at line 2 and 3 to whatever you want it to be.
 
 3. In Index.php, edit javascript variables __publicTestKey__ and __publicLiveKey__. You can find those keys in your Stripe settings. These keys are publishable.
 
@@ -38,7 +38,7 @@ If you don't like the background image, it's really easy to change. There's some
 So, basically, change this:
 ```CSS
 body {
-    background:url("/assets/default_background.jpg") no-repeat center center fixed; 
+    background:url("/assets/default_background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -49,6 +49,6 @@ body {
 to this:
 ```CSS
 body {
-	background:url("/assets/black_lozenge.png"); 
+	background:url("/assets/black_lozenge.png");
 }
 ```
