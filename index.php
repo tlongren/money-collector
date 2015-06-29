@@ -23,7 +23,7 @@ $yourName = "Your Name";
     <body>
         <div class="wrapper">
             <div class="ribbon">
-              Pay <?=$yourName?>
+              <p>Pay <?=$yourName?></p>
               <i></i>
               <i></i>
               <i></i>
