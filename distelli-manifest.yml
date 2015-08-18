@@ -1,0 +1,31 @@
+tlongren/money-collector:
+
+  #The below represents integration with the application repo: http://distel.li/commitdatasection
+  CommitData:
+    - RepoType: Git
+    - RepoPath: .
+
+  #The Env section is for defining environment variables: http://distel.li/envsection
+  Env:
+    - EXAMPLE: "This is an example variable"
+
+  #The PkgInclude is to identify files that must be included in the application deployment: http://distel.li/pkgincludesection
+  PkgInclude:
+    - '*'
+
+  #The PreRelease section is for specifying build and pre-packaging steps: http://distel.li/prereleasesection
+  PreRelease:
+    - echo "Begin PreRelease"
+
+  #The PreInstall section occurs before install: distel.li/preinstallsection
+  PreInstall:
+    - echo "Begin PreInstall"
+
+  #The PostInstall section occurs after install: http://distel.li/postinstallsection
+  PostInstall:
+    - echo "Begin PostInstall"
+
+  #The Exec section executes and monitors the application: distel.li/execsection
+  Exec:
+    - echo "Begin Exec"
+
