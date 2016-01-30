@@ -79,7 +79,7 @@ $yourName = "Your Name";
 
             </div>
             <div class="footer l-box is-center">
-                Built by <a href="https://longren.io/">Tyler Longren</a>, layout is from <a href="http://purecss.io">Purecss.io</a>.
+                Built by <a href="https://longren.io/">Tyler Longren</a>. Available on <a href="https://github.com/tlongren/money-collector">GitHub</a>.
             </div>
         </div>
 

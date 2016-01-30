@@ -86,7 +86,7 @@ $('#payment-form').submit(function(event) {
     }
     
     // Boom! We passed the basic validation, so request a token from Stripe:
-    Stripe.createToken({
+    Stripe.card.createToken({
         number: cardNumber,
         cvc: cardCVC,
         exp_month: $('#expiration-month').val(),

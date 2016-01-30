@@ -44,7 +44,7 @@ try {
 			"amount" => $priceInCents,
 			"currency" => "usd",
 			"card" => $token,
-			"description" => "payment to tyler")
+			"description" => $email)
 		);
 
 		// If no exception was thrown, the charge was successful!
