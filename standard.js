@@ -54,40 +54,40 @@ function stripeResponseHandler(status, response) {
       });
     }
 }
-$(document).ready(function() {
-    $('#payment-form').submit(function(event) {
-        // immediately disable the submit button to prevent double submits
-        //$('.submit-button').attr("disabled", "disabled");
-        var cardNumber = $("#card-number").val();
-        var cardCVC = $("#card-security-code").val();
-        var expirationMonth = $("#expiration-month").val();
-        var expirationYear = $("#expiration-year").val();
-        var price = $("#charge-amount").val();
-        
-         
-        // Stripe will validate the card number and CVC for us, so just make sure they're not blank
-        if (cardNumber === "") {
-            showErrorDialogWithMessage("Please enter your card number.");
-            return;
-        }
-        if (cardCVC === "") {
-            showErrorDialogWithMessage("Please enter your card security code.");
-            return;
-        }
-        if (price === "") {
-          showErrorDialogWithMessage("Please enter an amount to pay.");
-          return;
-        }
-        
-        // Boom! We passed the basic validation, so request a token from Stripe:
-        Stripe.createToken({
-            number: cardNumber,
-            cvc: cardCVC,
-            exp_month: $('#expiration-month').val(),
-            exp_year: $('#expiration-year').val()
-        }, stripeResponseHandler);
 
-        // Prevent the default submit action on the form
-        return false;
-    });
+
+$('#payment-form').submit(function(event) {
+    // immediately disable the submit button to prevent double submits
+    //$('.submit-button').attr("disabled", "disabled");
+    var cardNumber = $("#card-number").val();
+    var cardCVC = $("#card-security-code").val();
+    var expirationMonth = $("#expiration-month").val();
+    var expirationYear = $("#expiration-year").val();
+    var price = $("#charge-amount").val();
+    
+     
+    // Stripe will validate the card number and CVC for us, so just make sure they're not blank
+    if (cardNumber === "") {
+        showErrorDialogWithMessage("Please enter your card number.");
+        return;
+    }
+    if (cardCVC === "") {
+        showErrorDialogWithMessage("Please enter your card security code.");
+        return;
+    }
+    if (price === "") {
+      showErrorDialogWithMessage("Please enter an amount to pay.");
+      return;
+    }
+    
+    // Boom! We passed the basic validation, so request a token from Stripe:
+    Stripe.createToken({
+        number: cardNumber,
+        cvc: cardCVC,
+        exp_month: $('#expiration-month').val(),
+        exp_year: $('#expiration-year').val()
+    }, stripeResponseHandler);
+
+    // Prevent the default submit action on the form
+    return false;
 });
