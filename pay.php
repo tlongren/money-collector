@@ -15,7 +15,7 @@ require_once('vendor/autoload.php');
 $privateTestKey = "ENTER YOUR PRIVATE TEST KEY HERE";	// These are the SECRET keys!
 $privateLiveKey = "ENTER YOUR PRIVATE LIVE KEY HERE";
 
-Stripe::setApiKey($privateTestKey);  // Switch to change between live and test environments
+\Stripe\Stripe::setApiKey($privateTestKey);  // Switch to change between live and test environments
 
 // Get all the values from the form
 $token = $_POST['stripeToken'];
@@ -40,7 +40,7 @@ try {
 	try
 	{
 		// create the charge on Stripe's servers. THIS WILL CHARGE THE CARD!
-		$charge = \Stripe\Stripe::create(array(
+		$charge = \Stripe\Charge::create(array(
 			"amount" => $priceInCents,
 			"currency" => "usd",
 			"card" => $token,
