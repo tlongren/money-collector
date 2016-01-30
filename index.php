@@ -11,6 +11,7 @@ $yourName = "Your Name";
         <link rel="stylesheet" href="assets/pure-min.css">
         <link rel="stylesheet" href="assets/grids-responsive-min.css">
         <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script type="text/javascript">
@@ -23,7 +24,7 @@ $yourName = "Your Name";
     <body>
         <div class="header">
             <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-                <a class="pure-menu-heading" href="#">Owe Me Money???</a>
+                <a class="pure-menu-heading" href="#">Pay <?=$yourName?></a>
 
                 <ul class="pure-menu-list">
                     <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact Me</a></li>
@@ -35,8 +36,8 @@ $yourName = "Your Name";
         <div class="content-wrapper">
 
             <div class="content">
-                <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
-
+                <h2 class="content-head is-center">Pay an invoice, leave a tip, or just donate.</h2>
+                <h3 class="content-head is-center">Use the secure form below to pay with a credit/debit card.</h3>
                 <div class="pure-g">
                     <div class="l-box-lrg pure-u-1">
                         <span class="payment-alert" style="display:none;"></span>
@@ -71,11 +72,9 @@ $yourName = "Your Name";
                 </div>
 
             </div>
-
-        </div>
-
-        <div class="footer l-box is-center">
-            Built by <a href="https://longren.io/">Tyler Longren</a>, layout is from <a href="http://purecss.io">Purecss.io</a>.
+            <div class="footer l-box is-center">
+                Built by <a href="https://longren.io/">Tyler Longren</a>, layout is from <a href="http://purecss.io">Purecss.io</a>.
+            </div>
         </div>
 
         <div id="loading"><p>Processing...</p></div>
