@@ -8,8 +8,8 @@ $yourName = "Your Name";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pay <?=$yourName?></title>
         <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+        <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
         <link rel="stylesheet" href="assets/style.css">
         <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -88,6 +88,6 @@ $yourName = "Your Name";
           });
         });
         </script>
-        <script type="text/javascript" src="standard.js"></script>
+        <script type="text/javascript" src="assets/standard.js"></script>
     </body>
 </html>
