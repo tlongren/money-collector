@@ -7,10 +7,9 @@ $yourName = "Your Name";
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <title>Pay <?=$yourName?></title>
         <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link href='assets/style.css' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
-        <!-- jQuery is used only for this example; it isn't required to use Stripe -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript">
             // this identifies your website in the createToken call below
             var publicTestKey = 'ENTER PUBLISHABLE TEST KEY HERE';
