@@ -24,6 +24,8 @@ $cardCVC = $_POST['cardCVC'];
 $expirationMonth = $_POST['expirationMonth'];
 $expirationYear = $_POST['expirationYear'];
 $price = $_POST['price'];
+$name = $_POST['name'];
+$email = $_POST['email'];
 
 $priceInCents = $price * 100;	// Stripe requires the amount to be expressed in cents
 

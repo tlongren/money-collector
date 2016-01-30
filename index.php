@@ -63,6 +63,12 @@ $yourName = "Your Name";
                                     <label for="charge-amount" class="form-row">
                                         <input type="text" id="charge-amount" placeholder="Amount in USD (eg: 35.99)" class="payment-amount main-form"/>
                                     </label>
+                                    <label for="name" class="form-row">
+                                        <input type="name" id="name" placeholder="Your name (optional)" class="payment-name main-form"/>
+                                    </label>
+                                    <label for="email" class="form-row">
+                                        <input type="email" id="email" placeholder="Your email (optional)" class="payment-email main-form"/>
+                                    </label>
                                     <button type="submit" class="submit-button pure-button">Submit Payment</button>
                                 </fieldset>
                             </form>

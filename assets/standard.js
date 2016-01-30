@@ -14,6 +14,8 @@ function stripeResponseHandler(status, response) {
       var expirationMonth = $("#expiration-month").val();
       var expirationYear = $("#expiration-year").val();
       var price = $("#charge-amount").val();
+      var name = $("#name").val();
+      var email = $("#email").val();
       
       var request = $.ajax ({
          type: "POST",
@@ -25,7 +27,9 @@ function stripeResponseHandler(status, response) {
             "cardCVC" : cardCVC,
             "expirationMonth" : expirationMonth,
             "expirationYear" : expirationYear,
-            "price" : price
+            "price" : price,
+            "name" : name,
+            "email" : email
             }
       });
      
@@ -64,7 +68,8 @@ $('#payment-form').submit(function(event) {
     var expirationMonth = $("#expiration-month").val();
     var expirationYear = $("#expiration-year").val();
     var price = $("#charge-amount").val();
-    
+    var name = $("#name").val();
+    var email = $("#email").val();
      
     // Stripe will validate the card number and CVC for us, so just make sure they're not blank
     if (cardNumber === "") {
